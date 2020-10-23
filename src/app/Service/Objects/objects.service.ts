@@ -26,13 +26,16 @@ private domain: string;
 
   public postObjects(postData: ObjectGeo, typeOfObject): void {
     this.httpClient.post(this.domain + 'Objets/' + typeOfObject, postData).subscribe(data => {
-      console.log(data);
     });
-
   }
 
   public deleteObjects(id): void{
      this.httpClient.delete(this.domain + 'Objets/Delete/' + id).subscribe(data => {
+     });
+  }
+
+  public deleteAllObjects(): void{
+     this.httpClient.delete(this.domain + 'Objets/Delete/All').subscribe(data => {
      });
   }
 
