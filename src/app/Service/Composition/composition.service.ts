@@ -31,6 +31,7 @@ export class CompositionService {
     });
   }
 
+
   public deleteComposition(id): void{
     this.httpClient.delete(this.domain + 'Composition/Delete/' + id).subscribe(data => {
     });

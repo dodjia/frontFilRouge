@@ -1,0 +1,46 @@
+<div  class="d-flex justify-content-center">
+  <h1 class="animate__backInDown">Paint</h1>
+</div>
+
+<div class="d-flex d-flex justify-content-around">
+  <canvas #canvas width="1000" height="600" class="border border-primary marginTop"></canvas>
+</div>
+
+<div class="d-flex d-flex justify-content-around marginTop">
+
+    <div class="littlewidthComposition">
+      <button class="btn btn-primary form-control col-lg-12" (click)="getObjectFromDataBase()">récupérer les formes</button>
+    </div>
+
+    <div class="littlewidthComposition">
+      <button class="btn btn-primary form-control col-lg-12" (click)="createSquare()">créer un carré</button>
+    </div>
+
+    <div class="littlewidthComposition">
+      <button class="btn btn-primary form-control col-lg-12" (click)="deleteObject()">supprimer un carré via son id
+      </button>
+    </div>
+
+    <div class="littlewidthComposition">
+      <button class="btn btn-primary form-control col-lg-12" (click)="deleteAllObject()">supprimer toutes les formes
+      </button>
+    </div>
+
+</div>
+
+<div class="d-flex d-flex justify-content-around marginTop">
+
+    <div class="littlewidthComposition">
+      <button class="btn btn-primary form-control col-lg-12 " (click)="getComposition()">récupérer les composition</button>
+    </div>
+
+    <div class="littlewidthComposition">
+      <button class="btn btn-primary form-control col-lg-12" (click)="createComposition()">créer une composition</button>
+    </div>
+
+    <div class="littlewidthComposition">
+      <button class="btn btn-primary form-control col-lg-12" (click)="deleteComposition()">supprimer une composition via son id</button>
+    </div>
+
+</div>
+
